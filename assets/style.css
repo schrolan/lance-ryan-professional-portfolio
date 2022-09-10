@@ -1,0 +1,11 @@
+body {
+    display: inline;
+    background-image: repeating-conic-gradient(gray, orange 10%, yellow 10%);
+}
+
+.header{
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: silver;
+}
