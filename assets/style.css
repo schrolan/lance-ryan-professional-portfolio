@@ -1,5 +1,11 @@
 :root {
     --borderStyle: 5px solid;
+    --marginTop: 225px;
+    --cardBackgroundColor: gray;
+    --titleBackgroundColor: teal;
+    --textBackgroundColor: orange;
+    --titleFontSize: 40px;
+    --textFontSize: 32px;
 }
 body {
     background-image: repeating-conic-gradient(gray, orange 10%, yellow 10%);
@@ -15,8 +21,8 @@ header {
 
 .header{
     color: black;
-    font-size: 35px;
-    background-color: teal;
+    font-size: var(--titleFontSize);
+    background-color: var(--titleBackgroundColor);
     border: var(--borderStyle);
     border-radius: 5px;
 }
@@ -45,25 +51,25 @@ header {
 }
 
 .about-me {
-    background-color: gray;
+    background-color: var(--cardBackgroundColor);
     border: var(--borderStyle);
-    margin-top: 32px;
+    margin-top: var(--marginTop);
 }
 
 .about-me .about-me-title {
-    font-size: 40px;
+    font-size: var(--titleFontSize);
     border: var(--borderStyle);
-    background-color: teal;
+    background-color: var(--titleBackgroundColor);
     float: inline-start;
 }
 
 .about-me .about-me-text {
-    font-size: 32px;
+    font-size: var(--textFontSize);
     border: var(--borderStyle);
     background-color: orange;
     display: block;
     margin-bottom: 50px;
-    margin-top: 225px;
+    margin-top: var(--marginTop);
 }
 
 .about-me .program-pic {
@@ -74,4 +80,58 @@ header {
 
 .previous-work {
     border: var(--borderStyle); 
+    margin-top: var(--marginTop);
+    background-color: var(--cardBackgroundColor);
+}
+
+.previous-work .previous-work-title {
+    font-size: var(--titleFontSize);
+    border: var(--borderStyle);
+    background-color: var(--titleBackgroundColor);
+}
+
+.previous-work .study-guide-title, .second-app-title {
+    font-size: var(--textFontSize);
+    background-color: var(--textBackgroundColor);
+    border: var(--borderStyle);
+}
+
+.previous-work .first-web-app {
+    width: 95%;
+    border: var(--borderStyle);
+}
+
+.previous-work .second-web-app {
+    width: 75%;
+    border: var(--borderStyle);
+}
+
+.contact-info {
+    background-color: var(--cardBackgroundColor);
+    border: var(--borderStyle);
+    margin-top: var(--marginTop);
+}
+
+.contact-info h2 {
+    border: var(--borderStyle);
+    background-color: var(--titleBackgroundColor);
+    font-size: var(--titleFontSize);
+}
+
+.contact-info li {
+    border: var(--borderStyle);
+    background-color: var(--textBackgroundColor);
+    font-size: var(--textFontSize);
+}
+
+@media (max-width: 1300px){
+    .contact-info, .about-me, .previous-work, {
+        width: 48%;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-info, .about-me, .previous-work {
+        width: 100%
+    }
 }
