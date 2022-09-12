@@ -9,10 +9,6 @@
 }
 body {
     background-image: repeating-conic-gradient(gray, orange 10%, yellow 10%);
-    font-size: 20px;
-    line-height: 32px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 header {
@@ -22,9 +18,14 @@ header {
 .header{
     color: black;
     font-size: var(--titleFontSize);
-    background-color: var(--titleBackgroundColor);
+    background-color: var(--cardBackgroundColor);
     border: var(--borderStyle);
     border-radius: 5px;
+}
+
+.header .title {
+    background-color: var(--titleBackgroundColor);
+    border: var(--borderStyle);
 }
 
 .header h1 {
@@ -68,8 +69,7 @@ header {
     border: var(--borderStyle);
     background-color: orange;
     display: block;
-    margin-bottom: 50px;
-    margin-top: var(--marginTop);
+    margin-top: 200px;
 }
 
 .about-me .program-pic {
