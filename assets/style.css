@@ -1,4 +1,6 @@
-
+:root {
+    --borderStyle: 5px solid;
+}
 body {
     background-image: repeating-conic-gradient(gray, orange 10%, yellow 10%);
     font-size: 20px;
@@ -15,7 +17,7 @@ header {
     color: black;
     font-size: 35px;
     background-color: teal;
-    border: 3px solid;
+    border: var(--borderStyle);
     border-radius: 5px;
 }
 
@@ -34,7 +36,7 @@ header {
 
 .header nav ul li {
     display: inline-block;
-    border: 2px solid;
+    border: var(--borderStyle );
     background-color: orange;
 }
 
@@ -43,5 +45,33 @@ header {
 }
 
 .about-me {
-    border: 5px solid;
+    background-color: gray;
+    border: var(--borderStyle);
+    margin-top: 32px;
+}
+
+.about-me .about-me-title {
+    font-size: 40px;
+    border: var(--borderStyle);
+    background-color: teal;
+    float: inline-start;
+}
+
+.about-me .about-me-text {
+    font-size: 32px;
+    border: var(--borderStyle);
+    background-color: orange;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 225px;
+}
+
+.about-me .program-pic {
+    border: var(--borderStyle);
+    float: left;
+    height: 350px;
+}
+
+.previous-work {
+    border: var(--borderStyle); 
 }
