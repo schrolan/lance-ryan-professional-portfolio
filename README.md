@@ -8,7 +8,5 @@ I built this page from the gound up. This is a page that I plan on tweaking and 
 
 I learned a lot doing this site. At one point I just could not get the site to work no matter what I did. I ened up deleting the entire html and the css stylesheet and starting over. I was able to make it work after doing this. I ended learning that periods are very important. I had looked over the old save of the code so I could see exactly what it was that I had missed. As stated before, I had missed periods both with the pictures and the links to the page.
 
-
-'''md
-!(assets/images/portfolio-screenshot.jpeg)
-'''
+![portfolio-screenshot](https://user-images.githubusercontent.com/110797123/189779168-03c0b976-7b1a-4f26-911b-8c7005d1b966.jpeg)
+https://schrolan.github.io/lance-ryan-professional-portfolio/
